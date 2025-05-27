@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Coordinator Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1>Welcome, <span id="coordinator-name"></span></h1>
+  <h2>Create New Event</h2>
+
+  <form id="event-form">
+    <input type="text" id="title" placeholder="Event Title" required>
+    <input type="date" id="date" required>
+    <input type="number" id="points" placeholder="Activity Points" required>
+    <button type="submit">Add Event</button>
+  </form>
+
+  <h2>Your Events</h2>
+  <table id="event-table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Date</th>
+        <th>Points</th>
+        <th>View Participants</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Populated by JS -->
+    </tbody>
+  </table>
+
+  <div id="participants-section" style="display:none;">
+    <h3>Participants</h3>
+    <ul id="participants-list"></ul>
+  </div>
+
+  <button onclick="logout()">Logout</button>
+
+  <script src="js/coordinator.js"></script>
+</body>
+</html>

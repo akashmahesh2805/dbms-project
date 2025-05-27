@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Faculty Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <h1>Welcome, <span id="faculty-name"></span></h1>
+
+  <h2>Check Students Absent Due to Events</h2>
+  <form id="absent-form">
+    <label for="date">Select Date:</label>
+    <input type="date" id="date" required />
+    
+    <!-- If you have multiple classes, add a dropdown here -->
+    <!-- <select id="class-select">...</select> -->
+
+    <button type="submit">Get Absent Students</button>
+  </form>
+
+  <h3>Absent Students</h3>
+  <ul id="absent-list"></ul>
+
+  <button onclick="logout()">Logout</button>
+
+  <script src="js/faculty.js"></script>
+</body>
+</html>

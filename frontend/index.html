@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Attendance Tracker</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <h1>Attendance Tracker</h1>
+
+  <div class="form-container">
+    <!-- Login Form -->
+    <form id="login-form">
+      <h2>Login</h2>
+      <input type="email" id="login-email" placeholder="Email" required />
+      <input type="password" id="login-password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+
+    <hr />
+
+    <!-- Register Form -->
+    <form id="register-form">
+      <h2>Register</h2>
+      <input type="text" id="register-name" placeholder="Name" required />
+      <input type="email" id="register-email" placeholder="Email" required />
+      <input type="password" id="register-password" placeholder="Password" required />
+      <select id="register-role" required>
+        <option value="">Select Role</option>
+        <option value="student">Student</option>
+        <option value="coordinator">Event Coordinator</option>
+        <option value="faculty">Faculty</option>
+      </select>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>
